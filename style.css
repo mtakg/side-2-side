@@ -1,0 +1,67 @@
+body {
+	background-color: #333333;
+}
+
+.container {
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+.row {
+	scroll-snap-align: start;
+}
+
+.panel{
+	min-width: 30vw;
+	width: 50vw;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	background-size: 42vh;
+}
+
+.panel:hover {
+	width: 65vw;
+	z-index: 10;
+	transition-delay: transform 0.4s;
+	transition-duration: 1.5s;
+	/*background-size: cover;*/
+	/*background-position: bottom;*/
+}
+
+.leftpane{	
+	left: 0;	
+	background-color: #151537;
+	background-position: top left;
+}
+
+.rightpane{
+	right: 0;
+	background-color: #190000;
+	background-position: top left;
+}
+
+a {
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+	position: relative;
+	top: 42%;
+}
+
+a:hover {
+	color: #777777;
+}
+
+.fullpage {
+	min-height: 100vh;
+	max-height: 100vh;
+	color: #fff;
+}
+
+.fullpage p {
+	margin-top: 43vh;
+	margin-bottom: auto;
+}
+
